@@ -1,0 +1,22 @@
+# class Solution:
+#     def reverseBits(self, n: int) -> int:
+#         result = 0
+
+#         for _ in range(32):
+#             bit = n & 1
+#             result = (result << 1) | bit
+#             n >>= 1
+
+#         return result
+
+def reverseBits(n):
+    result = 0
+
+    for _ in range(32):
+        bit = n & 1
+        result = (result << 1) | bit
+        n >>= 1
+
+    return result
+
+print(reverseBits(43261596))  # 964176192
