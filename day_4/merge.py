@@ -1,8 +1,6 @@
 # merge sort is a divide and conquer algorithm that divides the input array into two halves, calls itself for the two halves,
 # and then merges the two sorted halves.
 
-
-
 def merge_sort(a):
     # base case
     if len(a) <= 1:

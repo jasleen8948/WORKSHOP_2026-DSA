@@ -19,4 +19,4 @@ def reverseBits(n):
 
     return result
 
-print(reverseBits(4))  
+print(reverseBits(43261596))  # 964176192

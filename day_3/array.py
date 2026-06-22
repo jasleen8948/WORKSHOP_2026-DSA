@@ -57,3 +57,16 @@ reverse(0, n - 1)
 reverse(0, k - 1)
 reverse(k, n - 1)
 print(arr)
+
+# two sum problem
+
+
+
+
+# remove duplicates from sorted array
+arr = [1, 1, 2, 3, 3, 4, 5, 5]
+unique_arr = []
+for i in range(len(arr)):
+    if i == 0 or arr[i] != arr[i - 1]:
+        unique_arr.append(arr[i])
+print(unique_arr)

@@ -1,6 +1,5 @@
 num1=10
 num2=20
-num3=30
 # arithmetic operators
 print(num1+num2)  # addition
 print(num1-num2)  # subtraction

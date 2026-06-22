@@ -17,28 +17,6 @@
 # | Bucket Sort    | O(n + k)                   | O(n + k)    | O(n²)       | O(n + k) | Depends |
 # | Shell Sort     | O(n log n) (gap dependent) | ~O(n^1.5)   | O(n²)       | O(1)     | No      |
 
-# selection sort - Find the minimum element and place it at the beginning.
-# def selection_sort(a):
-#     n = len(a)
-#     for i in range(n):
-#         m = i
-#         for j in range(i + 1, n):
-#             if a[j] < a[m]:
-#                 m = j
-#         a[i], a[m] = a[m], a[i]
-#     return a
-# a = [64, 25, 12, 22, 11]
-# print(selection_sort(a))
+# SBI- selection sort, bubble sort, insertion sort.....O(n^2)
+# MHQ- merge sort, heap sort, quick sort.....O(n log n)
 
-min=float('inf')
-def selection_sort(arr):
-    n = len(arr)
-    for i in range(n):
-        min_index = i
-        for j in range(i + 1, n):
-            if arr[j] < arr[min_index]:
-                min_index = j
-        arr[i], arr[min_index] = arr[min_index], arr[i]
-    return arr
-arr = [64, 25, 12, 22, 11]
-print(selection_sort(arr))
